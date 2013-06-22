@@ -1,4 +1,11 @@
 #
+# FileLogger
+#
+# Copyright (c) Ryan Kadwell <ryan@riaka.ca>
+#
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+#
 # Logs where time based on what file is active in sublime. Logs are stored
 # in $HOME/worklogs/[DATE]
 #
