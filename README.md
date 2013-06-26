@@ -14,12 +14,11 @@ cd /path/to/sublime/Packages
 git clone https://github.com/ryakad/sublime-filelogger.git FileLogger
 ```
 
-For access to the wl command you can simple copy it to your user's bin
-directory. Assuming you are still in the above directory.
+For access to the wl and cwl functions you can simply source it from your ~/.bashrc. Assuming you are still in the above directory run the following command.
 
 ```bash
-cp bin/wl ~/bin/wl
-chmod +x ~/bin/wl
+echo ". \"$(echo $PWD)/bin/functions\"" >> ~/.bashrc
 ```
+
 Now to view your work log you can simple run the `wl` command from your
-terminal.
+terminal. If you only want to see the last 10 entries you can run `wl 10`.
