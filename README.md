@@ -17,7 +17,7 @@ git clone https://github.com/ryakad/sublime-filelogger.git FileLogger
 For access to the wl and cwl functions you can simply source it from your ~/.bashrc. Assuming you are still in the above directory run the following command.
 
 ```bash
-echo ". \"$(echo $PWD)/bin/functions\"" >> ~/.bashrc
+echo ". \"$(echo $PWD)/bin/functions.sh\"" >> ~/.bashrc
 ```
 
 Now to view your work log you can simple run the `wl` command from your
