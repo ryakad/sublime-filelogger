@@ -6,16 +6,8 @@
 # For the full copyright and license information, please view the LICENSE
 # file that was distributed with this source code.
 #
-# Logs where time based on what file is active in sublime. Logs are stored
-# in $HOME/worklogs/[DATE]
-#
-# Bash function for viewing current work log from the command line.
-#
-# function wl()
-# {
-#     logfile="$HOME/.worklogs/$(ls $HOME/worklogs | sort -r | head -n1)"
-#     echo -e "\nCurrent Log File: $logfile\n\n$(cat $logfile)\n"
-# }
+# Logs time based on what file is active in sublime. Logs are stored in:
+# ${HOME}/.worklogs/[DATE]
 #
 # Author: Ryan Kadwell <ryan@riaka.ca>
 #
