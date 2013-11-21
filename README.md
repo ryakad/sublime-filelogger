@@ -14,9 +14,12 @@ cd /path/to/sublime/Packages
 git clone https://github.com/ryakad/sublime-filelogger.git FileLogger
 ```
 
-For access to the wl and cwl functions you can simply source it from your ~/.bashrc. Assuming you are still in the above directory run the following command.
+For access to the wl and cwl functions you can simply source it from your
+~/.bashrc. Assuming you are still in the above directory run the following
+command.
 
 ```bash
+cd FileLogger
 echo ". \"$(echo $PWD)/bin/functions.sh\"" >> ~/.bashrc
 ```
 
