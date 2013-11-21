@@ -49,11 +49,11 @@ class FileLogger(sublime_plugin.EventListener):
             start = datetime.datetime.fromtimestamp(self.timestart).strftime('%H:%M:%S')
             end = datetime.datetime.fromtimestamp(self.timeend).strftime('%H:%M:%S')
 
-            directory = os.getenv("HOME") + "/.worklogs"
+            directory = os.path.join(os.path.expanduser("~"), ".worklogs")
             if not os.path.exists(directory):
                 os.makedirs(directory)
 
-            f = open(directory + "/" + file_name, 'a+')
-            f.write(str(start) + "\t" + str(end) + "\t" + str(view.file_name()) + "\n")
+            f = open(os.path.join(directory, file_name), 'a+')
+            f.write(str(start) + "\t" + str(end) + "\t" + str(view.file_name()) + os.linesep)
 
         self.lastfile = view.file_name()
